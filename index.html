@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Erfindungssache – Wie kam das in die Welt?</title>
+<meta name="description" content="Alltags-Erfindungen in 80 Sekunden: Wer hat's erfunden, warum – und wie war's vorher? Neue Akte jeden Mo, Mi und Fr auf Instagram.">
+<meta property="og:title" content="Erfindungssache – Wie kam das in die Welt?">
+<meta property="og:description" content="Alltags-Erfindungen in 80 Sekunden. Neue Akte jeden Mo, Mi und Fr.">
+<meta property="og:image" content="img/og.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#C8442F">
+<link rel="icon" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@500;700&family=Archivo+Black&family=Special+Elite&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#F3E9D7; --paper:#F8F1E3; --navy:#2A2F45; --red:#C8442F; --petrol:#1D5C63; --mustard:#E9B949;
+  --ink-soft:#4A4F66; --shadow:6px 7px 0 rgba(42,47,69,.22);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;overflow-x:hidden;background:var(--cream);color:var(--navy);font:500 17px/1.6 Archivo,system-ui,sans-serif;
+  background-image:radial-gradient(rgba(42,47,69,.07) 1px,transparent 1.4px);background-size:14px 14px}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.torn{filter:url(#torn)}
+/* Kopf */
+header.hero{position:relative;overflow:hidden;padding:56px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1fr;gap:28px;align-items:center}
+@media(min-width:820px){.hero .wrap{grid-template-columns:1.25fr .9fr}}
+.stamp{display:inline-block;font:400 15px 'Special Elite',monospace;letter-spacing:3px;color:var(--red);
+  border:3px solid var(--red);padding:4px 12px;transform:rotate(-4deg);background:rgba(243,233,215,.8)}
+h1{margin:18px 0 10px;font:400 clamp(52px,11vw,104px)/.9 Anton,Impact,sans-serif;letter-spacing:.5px;text-transform:uppercase}
+h1 .r{display:inline-block;background:var(--navy);color:var(--cream);padding:2px 14px;box-shadow:var(--shadow);transform:rotate(-1.5deg)}
+.claim{font:400 clamp(22px,4.6vw,32px)/1.2 'Archivo Black';margin:18px 0 12px}
+.claim em{font-style:normal;color:var(--red)}
+.lead{max-width:34em;color:var(--ink-soft)}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font:700 17px Archivo;padding:13px 22px;
+  border:3px solid var(--navy);background:var(--red);color:var(--cream);box-shadow:var(--shadow);transition:transform .15s}
+.btn:hover{transform:translate(-2px,-2px)}
+.btn.ghost{background:var(--paper);color:var(--navy)}
+.avatar{justify-self:center;position:relative;width:min(78vw,360px);aspect-ratio:1}
+.avatar img{width:100%;height:100%;border-radius:50%;border:6px solid var(--navy);box-shadow:10px 12px 0 rgba(42,47,69,.25)}
+.avatar .tape{position:absolute;width:120px;height:34px;background:rgba(248,241,227,.8);top:6%;right:-4%;transform:rotate(28deg)}
+.avatar .tag{position:absolute;bottom:4%;left:-6%;background:var(--mustard);font:400 22px Anton;padding:6px 14px;
+  transform:rotate(-6deg);box-shadow:var(--shadow);border:3px solid var(--navy)}
+/* Bänder */
+section{padding:64px 0}
+h2{font:400 clamp(34px,6vw,52px)/1 Anton;text-transform:uppercase;margin:0 0 26px;letter-spacing:.5px}
+h2 span{background:var(--mustard);padding:0 10px;box-shadow:var(--shadow)}
+.band-navy{background:var(--navy);color:var(--cream)}
+.band-navy h2 span{color:var(--navy)}
+.steps{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr))}
+.step{background:var(--paper);color:var(--navy);padding:22px;border:3px solid var(--navy);box-shadow:8px 9px 0 rgba(0,0,0,.25)}
+.step b{display:block;font:400 34px Anton;color:var(--red);line-height:1}
+.step h3{margin:6px 0 6px;font:400 22px 'Archivo Black'}
+.step p{margin:0;font-size:15.5px;color:var(--ink-soft)}
+.plan{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.day{font:400 26px Anton;padding:8px 18px;background:var(--red);color:var(--cream);border:3px solid var(--cream)}
+.day small{font:700 14px Archivo;opacity:.85;margin-left:6px}
+/* Akten */
+.akten{display:grid;gap:22px;grid-template-columns:repeat(auto-fill,minmax(min(230px,100%),1fr))}
+.akte{position:relative;display:block;text-decoration:none;background:var(--paper);border:3px solid var(--navy);box-shadow:var(--shadow);transition:transform .15s}
+.akte:hover{transform:translate(-3px,-3px) rotate(-.4deg)}
+.akte .img{aspect-ratio:9/12;overflow:hidden;border-bottom:3px solid var(--navy);background:var(--cream)}
+.akte img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block}
+.akte .no{position:absolute;top:12px;left:-8px;font:400 14px 'Special Elite';letter-spacing:2px;background:var(--cream);
+  border:2px solid var(--red);color:var(--red);padding:3px 9px;transform:rotate(-5deg)}
+.akte .txt{padding:14px 16px 18px}
+.akte h3{margin:0 0 4px;font:400 22px/1.15 'Archivo Black'}
+.akte .meta{font:700 13px Archivo;letter-spacing:1.5px;text-transform:uppercase;color:var(--red)}
+.akte p{margin:8px 0 0;font-size:15px;line-height:1.5;color:var(--ink-soft)}
+.akte.soon{border-style:dashed;box-shadow:none;display:flex;align-items:center;justify-content:center;min-height:260px;
+  text-align:center;padding:24px;color:var(--ink-soft)}
+.akte.soon b{display:block;font:400 64px Anton;color:var(--red);line-height:1}
+/* Mitmachen */
+.wish{display:grid;gap:24px;align-items:center}
+@media(min-width:820px){.wish{grid-template-columns:1.2fr 1fr}}
+.bubble{position:relative;background:var(--paper);border:3px solid var(--navy);padding:22px 24px;font:400 22px/1.35 'Archivo Black';box-shadow:var(--shadow)}
+.bubble:after{content:"";position:absolute;bottom:-22px;left:40px;border:12px solid transparent;border-top:12px solid var(--navy)}
+footer{padding:40px 0 60px;font-size:14px;color:var(--ink-soft);border-top:3px dashed rgba(42,47,69,.25)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="torn"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" seed="3"/><feDisplacementMap in="SourceGraphic" scale="8"/></filter></svg>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="stamp">AKTE ERFINDUNGSSACHE</span>
+      <h1>Erfindungs<br><span class="r">sache</span></h1>
+      <p class="claim">Wie kam das <em>in die Welt?</em></p>
+      <p class="lead">Kanalisation, Kühlschrank, Konservendose: Hinter jedem Alltagsding steckt eine Geschichte voller Pannen, Zufälle und genialer Ideen. Wir erzählen sie in <strong>80 Sekunden</strong>, als animierte Akte für alle von 12 bis 99.</p>
+      <div class="btns">
+        <a class="btn" href="https://www.instagram.com/erfindungssache/" target="_blank" rel="noopener">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          @erfindungssache folgen</a>
+        <a class="btn ghost" href="#akten">Zu den Akten</a>
+      </div>
+    </div>
+    <div class="avatar">
+      <img src="img/avatar.jpg" alt="Logo von Erfindungssache: eine Glühbirne aus Papier-Collage mit Zahnrad">
+      <span class="tape"></span><span class="tag">80 SEK.</span>
+    </div>
+  </div>
+</header>
+
+<section class="band-navy" id="format">
+  <div class="wrap">
+    <h2><span>So funktioniert eine Akte</span></h2>
+    <div class="steps">
+      <div class="step"><b>01</b><h3>Vorher</h3><p>Wie lebte man ohne die Erfindung? Meist: stinkiger, mühsamer, gefährlicher.</p></div>
+      <div class="step"><b>02</b><h3>Die Fehlversuche</h3><p>Irrtümer, kuriose Vorläufer, gescheiterte Tüftler. Erst dann kommt der Durchbruch.</p></div>
+      <div class="step"><b>03</b><h3>So funktioniert's</h3><p>Das Prinzip als animierter Querschnitt, verständlich in einem Bild.</p></div>
+      <div class="step"><b>04</b><h3>Heute & der Twist</h3><p>Eine Zahl zum Staunen, ein überraschendes Ende und deine Frage für die nächste Akte.</p></div>
+    </div>
+    <div class="plan" aria-label="Erscheinungstage">
+      <span class="day">MO<small>18:30</small></span><span class="day">MI<small>18:30</small></span><span class="day">FR<small>18:30</small></span>
+    </div>
+  </div>
+</section>
+
+<section id="akten">
+  <div class="wrap">
+    <h2><span>Die Akten</span></h2>
+    <div class="akten" id="aktenGrid"></div>
+  </div>
+</section>
+
+<section class="band-navy" id="mitmachen">
+  <div class="wrap wish">
+    <div>
+      <h2><span>Deine Erfindung?</span></h2>
+      <p>Welches Alltagsding soll als Nächstes auf den Tisch? Schreib es unter ein Reel. Die meistgewünschten Themen bekommen ihre eigene Akte.</p>
+      <div class="btns"><a class="btn" href="https://www.instagram.com/erfindungssache/" target="_blank" rel="noopener">Zum Instagram-Kanal</a></div>
+    </div>
+    <div class="bubble">„Wer hat eigentlich das Klopapier erfunden?“</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="y"></span> Erfindungssache · Alltags-Erfindungen in 80 Sekunden</span>
+    <span>Fakten mit Quellen recherchiert · Animation & Stimme digital erstellt</span>
+  </div>
+</footer>
+
+<script src="akten.js"></script>
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+  const grid = document.getElementById('aktenGrid');
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const akten = (window.AKTEN || []).slice().sort((a, b) => b.akte - a.akte);
+  grid.innerHTML = akten.map(a => `
+    <a class="akte" href="${esc(a.reel)}" target="_blank" rel="noopener">
+      <div class="img"><img src="${esc(a.bild)}" alt="Akte ${a.akte}: ${esc(a.titel)}" loading="lazy"></div>
+      <span class="no">AKTE Nr. ${String(a.akte).padStart(2, '0')}</span>
+      <div class="txt"><div class="meta">${esc(a.ort)} · ${esc(a.jahr)}</div><h3>${esc(a.titel)}</h3><p>${esc(a.teaser)}</p></div>
+    </a>`).join('') + `
+    <div class="akte soon"><div><b>${String((akten[0]?.akte || 0) + 1).padStart(2, '0')}</b>Die nächste Akte ist schon in Arbeit.</div></div>`;
+</script>
+</body>
+</html>
