@@ -1,6 +1,17 @@
 // Wird von der Pipeline gepflegt (neue Akte oben anhängen)
 window.AKTEN = [
  {
+  "akte": 3,
+  "titel": "Die CD",
+  "jahr": "1982",
+  "ort": "Langenhagen",
+  "stil": "iso",
+  "teaser": "GTA VI kommt in einer Box, aber ohne Disc. Dabei sollte die CD laut Werbung ewig halten. Wie ein Laser eine über fünf Kilometer lange Spirale liest.",
+  "bild": "img/akte-03.jpg",
+  "reel": "https://www.instagram.com/erfindungssache/",
+  "datum": "2026-11-24"
+ },
+ {
   "akte": 2,
   "titel": "Die Konservendose",
   "jahr": "1810",
