@@ -1,6 +1,17 @@
 // Wird von der Pipeline gepflegt (neue Akte oben anhängen)
 window.AKTEN = [
  {
+  "akte": 4,
+  "titel": "Die Brille",
+  "jahr": "um 1290",
+  "ort": "Italien",
+  "stil": "collage",
+  "teaser": "Ab Mitte vierzig verschwimmt beim Lesen die Schrift. Kurz vor 1300 klemmt sich in Italien jemand zwei Linsen auf die Nase. Wer es war, weiß bis heute niemand.",
+  "bild": "img/akte-04.jpg",
+  "reel": "https://www.instagram.com/erfindungssache/",
+  "datum": "2026-11-26"
+ },
+ {
   "akte": 3,
   "titel": "Die CD",
   "jahr": "1982",
