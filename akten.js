@@ -8,7 +8,7 @@ window.AKTEN = [
   "stil": "collage",
   "teaser": "Ab Mitte vierzig verschwimmt beim Lesen die Schrift. Kurz vor 1300 klemmt sich in Italien jemand zwei Linsen auf die Nase. Wer es war, weiß bis heute niemand.",
   "bild": "img/akte-04.jpg",
-  "reel": "https://www.instagram.com/erfindungssache/",
+  "reel": "https://www.instagram.com/erfindungssachen/",
   "datum": "2026-11-26"
  },
  {
@@ -19,7 +19,7 @@ window.AKTEN = [
   "stil": "iso",
   "teaser": "GTA VI kommt in einer Box, aber ohne Disc. Dabei sollte die CD laut Werbung ewig halten. Wie ein Laser eine über fünf Kilometer lange Spirale liest.",
   "bild": "img/akte-03.jpg",
-  "reel": "https://www.instagram.com/erfindungssache/",
+  "reel": "https://www.instagram.com/erfindungssachen/",
   "datum": "2026-11-24"
  },
  {
@@ -30,7 +30,7 @@ window.AKTEN = [
   "stil": "iso",
   "teaser": "Die Blechdose wurde 1810 patentiert, der Dosenöffner erst 48 Jahre später. Bis dahin halfen oft nur Hammer und Meißel.",
   "bild": "img/akte-02.jpg",
-  "reel": "https://www.instagram.com/erfindungssache/",
+  "reel": "https://www.instagram.com/erfindungssachen/",
   "datum": "2026-11-22"
  },
  {
